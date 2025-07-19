@@ -12,13 +12,23 @@ interface TodoListProps {
 // Array of sticky note colors
 const stickyColors = [
   'bg-yellow-200 border-yellow-300',
-  'bg-pink-200 border-pink-300',
-  'bg-green-200 border-green-300',
-  'bg-blue-200 border-blue-300',
-  'bg-purple-200 border-purple-300',
-  'bg-orange-200 border-orange-300',
-  'bg-indigo-200 border-indigo-300',
-  'bg-teal-200 border-teal-300'
+'bg-pink-200 border-pink-300',
+'bg-green-200 border-green-300',
+'bg-blue-200 border-blue-300',
+'bg-purple-200 border-purple-300',
+'bg-orange-200 border-orange-300',
+'bg-indigo-200 border-indigo-300',
+'bg-teal-200 border-teal-300',
+'bg-red-200 border-red-300',
+'bg-emerald-200 border-emerald-300',
+'bg-lime-200 border-lime-300',
+'bg-cyan-200 border-cyan-300',
+'bg-rose-200 border-rose-300',
+'bg-fuchsia-200 border-fuchsia-300',
+'bg-sky-200 border-sky-300',
+'bg-violet-200 border-violet-300',
+'bg-amber-200 border-amber-300',
+
 ];
 
 // Array of subtle rotations for sticky notes
@@ -116,7 +126,7 @@ export default function TodoList({ todos: initialTodos }: TodoListProps) {
             {/* Sticky note "tape" effect */}
             <div className="absolute -top-2 left-8 w-12 h-6 bg-yellow-100 opacity-70 rounded-sm shadow-sm transform -rotate-12"></div>
             
-            <Link href={`/todos/${todo.id}`} className="block h-full">
+              <Link href={`/all-todos/${todo.id}`} className="block h-full">
               <div className="flex flex-col h-full">
                 <h3 className={`
                   text-lg font-medium mb-3 leading-tight
